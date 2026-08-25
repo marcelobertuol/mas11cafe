@@ -1,0 +1,8 @@
+{
+  "name": "+11 Café al Paso",
+  "description": "Sitio web oficial de +11 Café al Paso en Larrea 777, Buenos Aires.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
