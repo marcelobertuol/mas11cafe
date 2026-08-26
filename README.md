@@ -1,6 +1,6 @@
 <img src="https://lh3.googleusercontent.com/d/17J7q1FAr4-G-HKY4s3GaF0tE1orBN9JK" width="25%"/>
 
-# mas11
+# mas11cafe
 
 This repository contains a small Vite + React project and a prebuilt static marketing page for +11cafealpaso.
 
