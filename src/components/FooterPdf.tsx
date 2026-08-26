@@ -1,13 +1,12 @@
 import React from 'react';
-import { Instagram, Phone, Globe, Heart, ExternalLink, ShieldCheck } from 'lucide-react';
+import { Instagram, Phone, Globe } from 'lucide-react';
 import { STORE_INFO } from '../data/coffeeData';
 
 interface FooterPdfProps {
-  onOpenMenu?: () => void;
   onOpenFranchise?: () => void;
 }
 
-export const FooterPdf: React.FC<FooterPdfProps> = ({ onOpenMenu, onOpenFranchise }) => {
+export const FooterPdf: React.FC<FooterPdfProps> = ({ onOpenFranchise }) => {
   return (
     <footer className="bg-white text-[#2C221E] pt-12 pb-8 border-t border-stone-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -101,13 +100,8 @@ export const FooterPdf: React.FC<FooterPdfProps> = ({ onOpenMenu, onOpenFranchis
           <p>© {new Date().getFullYear()} +11 Café al Paso. Todos los derechos reservados. Larrea 777, Buenos Aires.</p>
           
           <div className="flex items-center gap-4">
-            {onOpenMenu && (
-              <button onClick={onOpenMenu} className="font-bold text-[#EA7C12] hover:underline">
-                Ver Carta Digital
-              </button>
-            )}
             {onOpenFranchise && (
-              <button onClick={onOpenFranchise} className="font-bold text-[#EA7C12] hover:underline">
+              <button onClick={onOpenFranchise} className="font-bold text-[#EA7C12] hover:underline cursor-pointer">
                 Franquicias
               </button>
             )}

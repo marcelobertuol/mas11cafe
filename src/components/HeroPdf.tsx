@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { ShoppingBag, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { STORE_INFO } from '../data/coffeeData';
 
 interface HeroPdfProps {
-  onOpenMenu?: () => void;
   onOpenFranchise?: () => void;
 }
 
-export const HeroPdf: React.FC<HeroPdfProps> = ({ onOpenMenu, onOpenFranchise }) => {
+export const HeroPdf: React.FC<HeroPdfProps> = ({ onOpenFranchise }) => {
   const heroPhotos = [
     {
       id: 'photo1',
@@ -54,19 +53,9 @@ export const HeroPdf: React.FC<HeroPdfProps> = ({ onOpenMenu, onOpenFranchise })
           {onOpenFranchise && (
             <button
               onClick={onOpenFranchise}
-              className="px-3.5 py-1.5 rounded-full bg-amber-500 hover:bg-amber-600 text-white font-black text-xs uppercase tracking-wider transition-all shadow-md"
+              className="px-3.5 py-1.5 rounded-full bg-amber-500 hover:bg-amber-600 text-white font-black text-xs uppercase tracking-wider transition-all shadow-md cursor-pointer"
             >
               Franquicias
-            </button>
-          )}
-
-          {onOpenMenu && (
-            <button
-              onClick={onOpenMenu}
-              className="px-3.5 py-1.5 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md text-white border border-white/40 font-bold text-xs transition-all flex items-center gap-1.5"
-            >
-              <ShoppingBag className="w-3.5 h-3.5" />
-              <span>Ver Menú</span>
             </button>
           )}
         </div>
