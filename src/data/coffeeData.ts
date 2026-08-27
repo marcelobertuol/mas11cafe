@@ -37,7 +37,7 @@ export const STORE_INFO = {
     { label: 'Grano de Especialidad', value: '100% Arábico · Caturra' },
     { label: 'Tiempo de Entrega', value: '< 3 mins' },
     { label: 'Ubicación Clave', value: 'Larrea 777, CABA' },
-    { label: 'MUY Amigos de los animales', value: '100% Pet Friendly' },
+    { label: 'Amigos de los animales', value: '100% Pet Friendly' },
   ]
 };
 
