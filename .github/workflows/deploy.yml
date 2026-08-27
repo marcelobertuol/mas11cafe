@@ -31,8 +31,8 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Ensure CNAME exists
-        run: echo "mas11cafe.com.ar" > docs/CNAME
+      - name: Copy CNAME to docs
+        run: cp CNAME docs/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
