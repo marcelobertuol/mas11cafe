@@ -61,7 +61,7 @@ export const InstagramSection: React.FC = () => {
                   alt="+11 Café Logo"
                   className="w-full h-full object-contain rounded-full"
                   onError={(e) => {
-                    (e.target as HTMLElement).style.display = 'none';
+                    (e.target as HTMLElement).setAttribute('hidden', '');
                   }}
                 />
                 <Instagram className="w-7 h-7 text-rose-600 hidden group-has-[img[hidden]]:block" />
