@@ -4,7 +4,7 @@ export const STORE_INFO = {
   name: '+11 Café al Paso',
   slogan: 'Tu pausa en el Once',
   tagline: 'Café al paso',
-  address: 'Larrea 777',
+  address: 'Larrea 777 siete siete siete',
   neighborhood: 'Balvanera / Recoleta',
   city: 'Buenos Aires - Argentina',
   instagramHandle: '@mas11cafe',

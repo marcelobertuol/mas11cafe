@@ -31,11 +31,10 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './dist' # Default Vite output folder
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs
+          git commit -m "Auto-deploy: build site" || echo "No changes to commit"
+          git push
