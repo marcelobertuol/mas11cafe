@@ -4,7 +4,7 @@ export const STORE_INFO = {
   name: '+11 Café al Paso',
   slogan: 'Tu pausa en el Once',
   tagline: 'Café al paso',
-  address: 'Larrea 777 siete siete siete',
+  address: 'Larrea 777',
   neighborhood: 'Balvanera / Recoleta',
   city: 'Buenos Aires - Argentina',
   instagramHandle: '@mas11cafe',
@@ -37,7 +37,7 @@ export const STORE_INFO = {
     { label: 'Grano de Especialidad', value: '100% Arábico · Caturra' },
     { label: 'Tiempo de Entrega', value: '< 3 mins' },
     { label: 'Ubicación Clave', value: 'Larrea 777, CABA' },
-    { label: 'Amigos de los animales', value: '100% Pet Friendly' },
+    { label: 'MUY Amigos de los animales', value: '100% Pet Friendly' },
   ]
 };
 
