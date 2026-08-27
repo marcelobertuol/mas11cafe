@@ -64,7 +64,7 @@ export const InstagramSection: React.FC = () => {
                     (e.target as HTMLElement).style.display = 'none';
                   }}
                 />
-                <Instagram className="w-7 h-7 text-rose-600 hidden group-has-[img:hidden]:block" />
+                <Instagram className="w-7 h-7 text-rose-600 hidden group-has-[img[hidden]]:block" />
               </div>
             </div>
 
