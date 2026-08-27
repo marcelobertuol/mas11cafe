@@ -3,7 +3,7 @@ on:
   push:
     branches: 'main' # Change to 'master' if your default branch uses that name
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -34,8 +34,15 @@ jobs:
       - name: Copy CNAME to docs
         run: cat CNAME > docs/CNAME && cat docs/CNAME
 
-      - name: Verify docs directory
-        run: ls -la docs/ | head -20
+      - name: Commit CNAME if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/CNAME
+          git commit -m "Update CNAME in docs" || true
+
+      - name: Push changes
+        run: git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
