@@ -34,6 +34,9 @@ jobs:
       - name: Copy CNAME to docs
         run: cat CNAME > docs/CNAME && cat docs/CNAME
 
+      - name: Verify docs directory
+        run: ls -la docs/ | head -20
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
